@@ -20,4 +20,4 @@ Edit variables inside Nishang-Generator to match attacking systems IP.Then run N
 
 Nishang-Generator.sh can also be run on Unix systems to generate one liners. Again the variables will need editing in the script.
 
-![image](https://user-images.githubusercontent.com/68926315/138880267-447bbd2e-b4f8-479b-af35-2daf851e32f3.png)
+![image](https://user-images.githubusercontent.com/68926315/138880466-18e6b11b-a2b1-441c-befd-191b567d4649.png)
