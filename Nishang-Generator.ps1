@@ -1,7 +1,8 @@
-$TargetIP = "10.10.10.10"
+$TargetIP = ""
 $TargetPort = ""
-$AttackerIP = "10.10.10.16"
-$AttackerPort = "443"
+$AttackerIP = ""
+$AttackerPort = ""
+
 $ExecutionArrayBypass = @(
 
 
