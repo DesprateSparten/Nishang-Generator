@@ -1,5 +1,6 @@
 # Nishang-Generator
-PowerShell script for generating easy one liners with Nishang
+
+A PowerShell and Bash script for generating easy one liners with Nishang
 
 # Usage 
 
